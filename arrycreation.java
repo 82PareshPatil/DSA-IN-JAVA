@@ -4,6 +4,7 @@ public class arrycreation
 {
     public static void main(String[] args) {
          int a[]=new int[10];
+        
          Scanner s=new Scanner(System.in);
          for(int i=0;i<10;i++)
          {
