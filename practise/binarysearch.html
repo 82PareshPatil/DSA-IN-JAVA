@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function binarySearch(arr, key) {
+    let start = 0;
+    let end = arr.length - 1;
+    
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
+        
+        if (arr[mid] === key) {
+            return mid;
+        } else if (arr[mid] > key) {
+            end = mid - 1;
+        } else {
+            start = mid + 1;
+        }
+    }
+    return -1;
+}
+
+const arr = [2, 3, 4, 5, 6, 7, 8, 9];
+const key = parseInt(prompt("Enter a key:"));
+const result = binarySearch(arr, key);
+
+if (result === -1) {
+    console.log("Key not found");
+} else {
+    console.log(`${key} found at position ${result}`);
+}
+
+    </script> 
+</body>
+</html>
