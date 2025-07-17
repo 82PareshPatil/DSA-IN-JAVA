@@ -12,13 +12,14 @@ public class practic {
             for(int k=i;k<j;k++)
         {
             System.out.print(A[k]+" ");
-            t++;
+           t++;
         }
         System.out.println();
-        
+    
         }
         
         System.out.println();
+           
         }
         System.out.println("Iteration: "+t);
     }
